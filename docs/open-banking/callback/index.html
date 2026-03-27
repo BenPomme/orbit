@@ -73,10 +73,16 @@
       <code id="callback-url"></code>
     </main>
     <script>
-      const target = `orbithousehold://open-banking/callback${window.location.search}${window.location.hash}`;
+      const nativeTarget = `orbithousehold://open-banking/callback${window.location.search}${window.location.hash}`;
+      const expoGoTarget = `exp://192.168.2.80:8081/--/open-banking/callback${window.location.search}${window.location.hash}`;
       const openLink = document.getElementById("open-link");
       const status = document.getElementById("status");
       const callbackUrl = document.getElementById("callback-url");
+      const returnMode =
+        new URLSearchParams(window.location.search).get("target") === "native"
+          ? "native"
+          : "expo-go";
+      const target = returnMode === "expo-go" ? expoGoTarget : nativeTarget;
 
       openLink.href = target;
       callbackUrl.textContent = target;
@@ -85,7 +91,9 @@
         window.location.replace(target);
         window.setTimeout(() => {
           status.textContent =
-            "If the app did not open automatically, use the button below.";
+            returnMode === "expo-go"
+              ? "If Expo Go did not reopen automatically, use the button below."
+              : "If the app did not open automatically, use the button below.";
         }, 1200);
       } catch (_error) {
         status.textContent =
