@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Orbit Household",
+    "slug": "orbit-household",
+    "scheme": "orbithousehold",
+    "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f7f3ea"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.orbithousehold.app",
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.orbithousehold.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "typedRoutes": false
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}

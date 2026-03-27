@@ -1,0 +1,9 @@
+node_modules
+.pnpm-store
+.expo
+.expo-shared
+.env
+.env.local
+dist
+coverage
+.DS_Store

@@ -1,0 +1,104 @@
+{
+  "household": {
+    "id": "demo-household",
+    "name": "Pommeraud Household",
+    "country": "ES",
+    "locale": "es-ES",
+    "currency": "EUR",
+    "isSetupComplete": true,
+    "shareCode": "ORBIT-ES-01",
+    "members": [
+      {
+        "id": "member-benjamin-1",
+        "name": "Benjamin",
+        "color": "#0f9d7a"
+      },
+      {
+        "id": "member-partner-2",
+        "name": "Partner",
+        "color": "#d97841"
+      }
+    ]
+  },
+  "session": {
+    "activeMemberId": "member-benjamin-1"
+  },
+  "users": [
+    {
+      "id": "user-1f7c2a91-7f29-4e45-bcab-1e2f7b51b841",
+      "email": "test@test.com",
+      "createdAt": "2026-03-11T15:19:09.187Z"
+    }
+  ],
+  "memberships": [],
+  "authChallenges": [],
+  "authSessions": [
+    {
+      "id": "auth-session-01a3bff8-f3c4-49ce-a2af-3a706fb38841",
+      "token": "a9651471-4763-4c78-954f-461b8f28f115",
+      "userId": "user-1f7c2a91-7f29-4e45-bcab-1e2f7b51b841",
+      "memberId": "member-benjamin-1",
+      "createdAt": "2026-03-11T15:19:09.187Z",
+      "expiresAt": "2026-04-10T15:19:09.187Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "netflix-household",
+      "merchant": "Netflix",
+      "category": "Entertainment",
+      "amount": 17.99,
+      "currency": "EUR",
+      "cadence": "monthly",
+      "nextRenewal": "2026-03-11",
+      "owner": "shared",
+      "ownerLabel": "Household",
+      "status": "active",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "spotify-family",
+      "merchant": "Spotify",
+      "category": "Entertainment",
+      "amount": 18.99,
+      "currency": "EUR",
+      "cadence": "monthly",
+      "nextRenewal": "2026-03-18",
+      "owner": "shared",
+      "ownerLabel": "Household",
+      "status": "active",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "duolingo-max",
+      "merchant": "Duolingo",
+      "category": "Education",
+      "amount": 14.99,
+      "currency": "EUR",
+      "cadence": "monthly",
+      "nextRenewal": "2026-03-09",
+      "owner": "personal",
+      "ownerLabel": "Benjamin",
+      "status": "trial",
+      "confidence": "detected"
+    },
+    {
+      "id": "icloud-plus",
+      "merchant": "iCloud+",
+      "category": "Cloud",
+      "amount": 9.99,
+      "currency": "EUR",
+      "cadence": "monthly",
+      "nextRenewal": "2026-03-27",
+      "owner": "shared",
+      "ownerLabel": "Household",
+      "status": "active",
+      "confidence": "manual"
+    }
+  ],
+  "bankConnections": [],
+  "bankAccounts": [],
+  "bankTransactions": [],
+  "recurringCandidates": [],
+  "candidateReviews": []
+}
